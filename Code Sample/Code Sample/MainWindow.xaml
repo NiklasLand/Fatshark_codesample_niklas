@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Code_Sample"
+        xmlns:WindowsPresentation="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation" x:Class="Code_Sample.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Outputbox" HorizontalAlignment="Left" Height="114" Margin="21,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <Label x:Name="RadiusLable" Content="Raidus:" HorizontalAlignment="Left" Margin="408,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.184,0.192" Width="68"/>
+        <TextBox x:Name="Radius" HorizontalAlignment="Left" Height="23" Margin="459,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Identify the largest &#xD;&#xA;group of people" HorizontalAlignment="Left" Margin="598,4,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click" Height="61"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="316" Margin="365,83,0,0" VerticalAlignment="Top" Width="417">
+            <WindowsPresentation:GMapControl x:Name="Gmap"/>
+        </Border>
+        <Button Content="Identify most &#xD;&#xA;common&#xD;&#xA;email domians" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="120" Height="55" Click="Button_Click_1"/>
+        <TextBlock x:Name="AmountText" HorizontalAlignment="Left" Margin="365,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+    </Grid>
+</Window>
